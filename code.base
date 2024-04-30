@@ -12,41 +12,41 @@ VSBoxBody,VSBoxBody2,VSBoxBody3,VSBoxBody4:TCLVertScrollBox;
 sym,sym2,sym3,sym4:Integer;
 frkses,kazanmases:Single;
 
-Procedure Exit4
+procedure Exit4
 begin
 TClProButton(svy4frm.clFindComponent('BtnGoBack')).Click;
 end;
-Procedure Exit3
+procedure Exit3
 begin
 TClProButton(svy3frm.clFindComponent('BtnGoBack')).Click;
 end;
-Procedure Exit2
+procedure Exit2
 begin
 TClProButton(svy2frm.clFindComponent('BtnGoBack')).Click;
 end;
-Procedure Exit1
+procedure Exit1
 begin
 TClProButton(svy1frm.clFindComponent('BtnGoBack')).Click;
 end;
 
-Procedure GameOver
+procedure GameOver
 begin
  ShowMessage('TEBRİKLER');
 end;
 
-Procedure frksesprcdr
+procedure frksesprcdr
   begin
     svy1frm.PlayGameSound(frkses);
-  End;
+  end;
 
-Procedure kazanmasesprcdr
+procedure kazanmasesprcdr
   begin
     svy1frm.PlayGameSound(kazanmases);
-  End;
+  end;
 
 procedure btnenbld1
 begin
-  if sym=4 then
+  if sym = 4 then 
   begin
   sayfagcsbtn.Enabled:=True;
   blglbl.Visible:=True;
@@ -56,7 +56,7 @@ end;
 
 procedure btnenbld2
 begin
-  if sym2=5 then
+  if sym2 = 5 then
   begin
   sayfagcsbtn2.Enabled:=True;
   blglbl2.Visible:=True;
@@ -66,7 +66,7 @@ end;
 
 procedure btnenbld3
 begin
-  if sym3=6 then
+  if sym3 = 6 then
   begin
   sayfagcsbtn3.Enabled:=True;
   blglbl3.Visible:=True;
@@ -76,7 +76,7 @@ end;
 
 procedure btnenbld4
 begin
-  if sym4=7 then
+  if sym4 = 7 then
   begin
   blglbl4.Visible:=True;
   basadnbtn.Visible:=True;
@@ -332,6 +332,7 @@ clComponent.SetupComponent(frk44btn,'{"Align" : "Center","Width":30,"Height":30,
 svy4frm.AddNewEvent(frk44btn,tbeOnClick,'fark22');
 
 svy4frm.Run;
+
 end;
 
 procedure NewLevel4
@@ -564,6 +565,7 @@ svy3frm.AddNewEvent(frk30btn,tbeOnClick,'fark15');
 svy3frm.AddNewEvent(sayfagcsbtn3,tbeOnClick,'NewLevel4');
 
 svy3frm.Run;
+
 end;
 
 procedure NewLevel3
@@ -792,7 +794,7 @@ clComponent.SetupComponent(frk2btn,'{"Align" : "Center","Width":55,"Height":23,
 frk2btn.Enabled:=False;
 symlbl.Text:= IntToStr(sym)+'/4';
 frksesprcdr;
-end
+end;
 
 procedure fark2
 begin
@@ -954,6 +956,7 @@ clComponent.SetupComponent(frk8btn,'{"Align" : "Center","Width":20,"Height":25,
 svy1frm.AddNewEvent(frk8btn,tbeOnClick,'fark4');
 
 svy1frm.AddNewEvent(sayfagcsbtn,tbeOnClick,'NewLevel2');
+
 svy1frm.Run;
 end;
 

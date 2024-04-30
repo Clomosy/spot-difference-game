@@ -46,7 +46,7 @@ void kazanmasesprcdr
 
 void btnenbld1
 {
-  if (sym == 4) 
+  if (sym==4) 
   {
   sayfagcsbtn.Enabled=True;
   blglbl.Visible=True;
@@ -56,7 +56,7 @@ void btnenbld1
 
 void btnenbld2
 {
-  if (sym2 == 5)
+  if (sym2==5)
   {
   sayfagcsbtn2.Enabled=True;
   blglbl2.Visible=True;
@@ -66,7 +66,7 @@ void btnenbld2
 
 void btnenbld3
 {
-  if (sym3 == 6)
+  if (sym3==6)
   {
   sayfagcsbtn3.Enabled=True;
   blglbl3.Visible=True;
@@ -76,7 +76,7 @@ void btnenbld3
 
 void btnenbld4
 {
-  if (sym4 == 7)
+  if (sym4==7)
   {
   blglbl4.Visible=True;
   basadnbtn.Visible=True;
@@ -254,7 +254,7 @@ clComponent.SetupComponent(basadnbtn,'{"Align" : "center","BackgroundColor":"#FF
 basadnbtn.Visible=False;
 svy4frm.AddNewEvent(basadnbtn,tbeOnClick,'RestartGame');
 
-geribtn4 = svy4frm.AddNewProButton(svy4frm,'geribtn4','');
+geribtn4= svy4frm.AddNewProButton(svy4frm,'geribtn4','');
 clComponent.SetupComponent(geribtn4,'{"Align" : "None","Width":60,"Height":40,
 "ImgUrl":"https://clomosy.com/demos/XoXback.png"}');
 geribtn4.Position.X=8;
@@ -332,6 +332,7 @@ clComponent.SetupComponent(frk44btn,'{"Align" : "Center","Width":30,"Height":30,
 svy4frm.AddNewEvent(frk44btn,tbeOnClick,'fark22');
 
 svy4frm.Run;
+
 }
 
 void NewLevel4
@@ -378,7 +379,7 @@ frk23btn.Enabled=False;
 clComponent.SetupComponent(frk24btn,'{"Align" : "Center","Width":45,"Height":18,
 "MarginBottom" : 152,"MarginRight" : 175,"ImgUrl":"https://clomosy.com/demos/checkCircle.png"}');
 frk24btn.Enabled=False;
-symlbl3.Text = IntToStr(sym3)+'/6';
+symlbl3.Text= IntToStr(sym3)+'/6';
 frksesprcdr;
 }
 
@@ -564,6 +565,7 @@ svy3frm.AddNewEvent(frk30btn,tbeOnClick,'fark15');
 svy3frm.AddNewEvent(sayfagcsbtn3,tbeOnClick,'NewLevel4');
 
 svy3frm.Run;
+
 }
 
 void NewLevel3
@@ -954,6 +956,7 @@ clComponent.SetupComponent(frk8btn,'{"Align" : "Center","Width":20,"Height":25,
 svy1frm.AddNewEvent(frk8btn,tbeOnClick,'fark4');
 
 svy1frm.AddNewEvent(sayfagcsbtn,tbeOnClick,'NewLevel2');
+
 svy1frm.Run;
 }
 
